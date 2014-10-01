@@ -1,0 +1,3 @@
+import battleship
+
+carrier = Carrier()

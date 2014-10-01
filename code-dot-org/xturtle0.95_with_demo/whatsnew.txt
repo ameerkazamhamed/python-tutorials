@@ -1,0 +1,116 @@
+
+WHAT'S NEW in version 0.95a0
+============================
+1. Turtle features
+2. Utilities
+3. Example scripts
+
+
+1. Turtle features:
+----------------
+
+- The names of the main classe have been changed to RawTurtle and Turtle,
+  while the aliases RawPen and Pen have been retained.
+  
+- Some of the methods have been changed, some new ones have been added.
+
+  The most impüortant among these are:
+  
+  undo() with an undobuffer of configureable size. Mainly for use in 
+         interactive mode. (A request of many users of considerable practical
+	 importance.)
+	 
+  stamp() puts stamps of the turtleshape unto the canvas
+  
+  onlick() has been replaced by onscreenclick()
+  
+  onclick(), onrelease(), ondrag() are new eventbinding methods for the
+         turtles (whereas the other event binding methos act on the screen.
+	 
+  turtlesize() has been changed to configur strechx and strechy separately
+  
+  tilt() van be used tu turn the turtleshape without changing it's orientation.
+  
+  The latter two methods make "Turtles" to very versatile geometrical
+  objects.
+  
+2. Utilities:
+-----------
+
+(1) the xturtle module, when imported or executed tries to read an
+  xturtle.cfg file to configur the intial window size and some other
+  settings like mode, language (see below), or undobuffersize.
+  It first tries to locate it in the current working directory, and then
+  in the directory where xturtle itself resides. If no config-file is
+  found, the default configuration will be used.
+  
+  The xturtle package contains a xturtle.cfg_ file, which configures
+  it to behave like turtle.py from the standard distribution.
+  
+  To try it out, rename it to xturtle.cfg and put it in you current
+  working directory.
+  
+(2) there exists the possibility to create and use help in other languages
+  than English. One has to prepare a file, which contains a dictionary
+  of docstring, which has to be named docsdict_<language>.py.
+  As an example docsdict_german.py is provided with this package.
+  (For now it's only the version for xturtle 0.93)
+  If you want to try it out, set language in your config-file to german:
+  
+      language = german
+      
+  As a result of this, the dictionary will be used to replace the
+  docstrings in English by those in the ahosen language.
+  
+  You can use this feature by calling Python's help, e.g.:
+  
+ >>> help(fd)
+ Help on function fd in module __main__:
+
+ fd(distance)
+     Bewege die Turtle um distance nach vorne,
+     Alias-Namen: forward | fd
+     Bewegung nach vorne heißt in Richtung der Orientierung
+     der Turtle.
+     ---
+     Argument: ein Zahl
+    
+     Aufruf: forward(<zahl>)
+     --oder: fd(<zahl>)
+    
+     Beispiel:
+    
+     >>> position()
+     (0.00, 0.00)
+     >>> forward(25)
+     >>> position()
+     (25.00,0.00)
+     ...
+     
+RECOMMENDATION: if you want to use help in your language. put the 
+corresponding dictionary-file in the same directory as xturtle. (Although
+it's only needed that it is somewhere on the sys.path, because it's a
+Python file and will be imported)
+The xturtle.cfg will not be imported but read, so you have to follow
+the advice given above. 
+
+A more thorough documentation of this feature, especially about how to
+prepare the help files for other languages will follow soon.
+
+
+3. New example scripts
+----------------------
+
+They are intended to demonstrate the new features. (Some of the older
+ones have minor modifications). Among them are:
+
+1. newOldTurtleDemo    demonstrates  undo
+2. clocks|clock                      a more elaborate version than clock-demo
+3. elementary|flower-tiltdemo        turtlesize, tilt() and stamp()
+4. games|minimal-hanoi               turtlesize / very concise, elegant version
+5. games|moorhuhn      changed       the new onclick, OOP-style
+6. games|tangram                     ondrag
+7. penrose_tiling|...                stamp,  (three scripts)
+8. wikipedia3                        undo
+
+

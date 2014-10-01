@@ -1,0 +1,10 @@
+width = 0.5
+height = 0.75
+canvwidth = 360
+canvheight = 270
+leftright = None
+topbottom = None
+shape = classic
+mode = standard
+language = german
+importvec = False
