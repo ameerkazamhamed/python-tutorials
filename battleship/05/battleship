@@ -87,25 +87,43 @@ class Controller():
         self.player.shots_grid.rows[row][col] = '*'
 
     def play(self):
+        #TODO trap all exceptions to keep from bailing to early
         while True:
             self.print_player_grids(self.player)
             self.shoot()
 
     def print_player_grids(self,player):
-        print('\u2501' * 51)
-        print('|      -~-SHIPS-~-       |        -~-SHOTS-~-     |')
-        for row_num in range(10):
-            print('| ',end='')
-            for col in player.ships_grid.rows[row_num]:
-                print(col, end=' ')
-            print(' |', end=' ')
-            for col in player.shots_grid.rows[row_num]:
-                print(col, end=' ')
-            print(' |',end='')
-            print()
-        print('\u2501' * 51)
 
-Controller().play()
+        # define box characters
+        ul =  '\u250F' 
+        ur =  '\u2513'
+        ll =  '\u2517' 
+        lr =  '\u251B'
+        h =   '\u2501'
+        v =   '\u2503'
+        uhv = '\u2533'
+        lhv = '\u253B'
+
+        print(ul + h * 24 + uhv + h * 24 + ur)
+        print(v + '       -~-SHIPS-~-     ' ,
+              v + '       -~-SHOTS-~-      ' + v)
+
+        for row in range(10):
+            print(v + ' ',end='')
+            for col in player.ships_grid.rows[row]:
+                print(col, end=' ')
+            print(' ' + v, end=' ')
+            for col in player.shots_grid.rows[row]:
+                print(col, end=' ')
+            print(' ' + v,end='')
+            print()
+
+        print(ll + h * 24 + lhv + h * 24 + lr)
+
+
+if __name__ == '__main__':
+    Controller().play()
+
 #------------------------------------------
 '''
 

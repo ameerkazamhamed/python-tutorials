@@ -14,7 +14,8 @@ class Event():
         self.data = kwargs
 
 class Trainer(Entity):
-    pass
+    def __init__(self):
+        self.location = None
 
 class Computer(Trainer):
     '''An AI version of a trainer, for playing single player.'''
@@ -44,7 +45,9 @@ class Game():
     def mainloop(): 
         '''The main loop of the game.'''
 
-''' class Event(): pass
+#----------------------------------------------------
+
+class Event(): pass
 
 class Move():
 
@@ -71,32 +74,36 @@ class Player():
     def on_find_pokemon(self,pokemon):
         action = Game.ask()
         if action == 'fight':
-            self.fight(pokemon)
+            self.do_fight(pokemon)
         elif action == 'bag':
-            self.bag()
+            self.do_bag()
         elif action == 'pokemon':
-            self.select_pokemon()
+            self.do_select_pokemon()
         elif action == 'run':
-            self.run()
+            self.do_run()
         else:
             self._unknown_action()
 
-    def fight(self,foe):
+    def do_fight(self,foe):
         Game.handle_fight(self,foe)
         move = Game.ask('Select a move ' + pokemon.moves + ': ')
         pokemon.do(move,foe)
         foe.do(move,pokemon)
 
-    def bag(self): pass
+    def do_bag(self): pass
 
-    def select_pokemon(self): pass 
+    def do_select_pokemon(self): pass 
 
-    def run(self): pass
+    def do_run(self): pass
+
+    def do_move(self): pass
 
     def _unknown_action(self): pass
 
+
 class Game():
 
+    # TODO subclass Cmd for this
     def ask(text='What would you like to do?'):
         return input(text).strip().lower()
 

@@ -1,26 +1,30 @@
 #!/usr/bin/env python3
 
-from turtle import *
+from turtle import Turtle
 from random import random
+
+t = Turtle()
+t.speed(0)
+t.left(90)
 
 def random_color():
     return (random(),random(),random())
 
 def draw_a_tree(depth, branches):
     if depth > 0:
-        width(5)
-        pencolor(random_color())
-        pendown()
-        forward(7 * depth)
-        left(130)
+        t.width(5)
+        t.pencolor(random_color())
+        t.pendown()
+        t.forward(7 * depth)
+        t.left(130)
         count = 0
         while count < branches:
-            right(180 / branches)
+            t.right(180 / branches)
             draw_a_tree(depth-1, branches)
             count += 1
-        left(50)
-        penup()
-        backward(7 * depth)
+        t.left(50)
+        t.penup()
+        t.backward(7 * depth)
 
 draw_a_tree(9,2)
 input()
