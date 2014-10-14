@@ -1,6 +1,6 @@
 class Grid():
     '''Three dimensional game grid matrix for use in text or graphic games
-    (chess, battleship, connect4, etc.)'''
+    (tic-tac-toe, chess, checkers, connect4, battleship, rpgs, etc.)'''
 
     col_labels = list('123456789')
     x_labels = col_labels

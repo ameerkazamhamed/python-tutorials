@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
+import random
+
 class Ship(): # abstract-ish
     size = None
     char = None
+    placed = None
 
     def __init__(self):
         self.row = 0
@@ -31,6 +34,7 @@ class PatrolBoat(Ship):
 
 class Player():
     def __init__(self):
+        self.name = 'Player'
         self.carrier = Carrier()
         self.battleship = Battleship()
         self.destroyer = Destroyer()
@@ -46,11 +50,19 @@ class Player():
         self.ships_grid = Grid()
         self.shots_grid = Grid()
 
+class Computer(Player):
+    pass
+
+class BadDirection(Exception): pass
+
 class Grid():
     row_num = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10}
+    WATER = '~'
+    EMPTY = WATER
+
     def __init__(self):
-        w = '~'
-        self.rows = [
+        w = Grid.WATER
+        self.squares = [
             [' ',0,1,2,3,4,5,6,7,8,9],
             ['A',w,w,w,w,w,w,w,w,w,w],
             ['B',w,w,w,w,w,w,w,w,w,w],
@@ -63,6 +75,27 @@ class Grid():
             ['I',w,w,w,w,w,w,w,w,w,w],
             ['J',w,w,w,w,w,w,w,w,w,w]
         ]
+        self.row_count = 10
+        self.col_count = 10
+
+    def is_empty_at(self,col=1,row=1):
+        return self.squares[row][col] == self.EMPTY
+
+    def is_row_empty_at(self,row=1,col=1,size=1,reverse=False):
+        if reverse:
+            cols = range(col+size,col,-1)
+        else:
+            cols = range(col,col+size,1)
+        for col in cols:
+            if not self.is_empty_at(col,row):
+                return False
+        return True
+
+    def find_empty(self,size):
+        while True:
+            x = random.randint(1,self.size_x)
+            y = random.randint(1,self.size_y)
+
 
 class Controller():
     def __init__(self):
@@ -70,7 +103,9 @@ class Controller():
         self.computer = Player()
 
     def greet(self):
-        print('Prepare for battle!')
+        print('Well hello there. What is your name?')
+        self.player.name = input('> ').strip().title()
+        print('Prepare for battle {}!'.format(self.player.name))
 
     def ask_coord(self):
         row = input('Row?').strip().lower()
@@ -83,14 +118,28 @@ class Controller():
         (row,col) = self.ask_coord()
         # TODO have to change what is printed on grid
         # depending on if it is a hit or not
-        self.computer.ships_grid.rows[row][col] = '*'
-        self.player.shots_grid.rows[row][col] = '*'
+        self.computer.ships_grid.squares[row][col] = '*'
+        self.player.shots_grid.squares[row][col] = '*'
 
     def play(self):
         #TODO trap all exceptions to keep from bailing to early
+        self.greet()
+        self._place_ships_random(self.player)
         while True:
             self.print_player_grids(self.player)
             self.shoot()
+
+    def _place_ships_random(self,player):
+        print('Placing ships randomly for {}.'.format(player.name))
+        for ship in player.ships:
+            size = ship.size
+            char = ship.char
+            while not ship.placed:
+                max_row = 9
+                max_col = 9
+                direction =  random.choice(['x','-x','y','-y'])
+
+
 
     def print_player_grids(self,player):
 
@@ -110,10 +159,10 @@ class Controller():
 
         for row in range(10):
             print(v + ' ',end='')
-            for col in player.ships_grid.rows[row]:
+            for col in player.ships_grid.squares[row]:
                 print(col, end=' ')
             print(' ' + v, end=' ')
-            for col in player.shots_grid.rows[row]:
+            for col in player.shots_grid.squares[row]:
                 print(col, end=' ')
             print(' ' + v,end='')
             print()
