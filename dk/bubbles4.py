@@ -41,14 +41,19 @@ import random
 bubble_id = list()
 bubble_radius = list()
 bubble_speed = list()
-BUBBLE_RADIUS_MIN = 10
-BUBBLE_RADIUS_MAX = 30
-BUBBLE_SPEED_MAX = 10
+MIN_BUBBLE_RADIUS = 10
+MAX_BUBBLE_RADIUS = 30
+MAX_BUBBLE_SPEED = 10
 GAP = 100
 
-#TODO FINISH
-
-create_bubble()
+def create_bubble():
+    x = WIDTH + GAP
+    y = random.randint(0, HEIGHT)
+    r = random.randint(MIN_BUBBLE_RADIUS, MAX_BUBBLE_RADIUS)
+    id1 = c.create.oval(x-r, y-r, x+r, y+r, outline='white')
+    bubble_id.append(id1)
+    bubble_radius.append(r)
+    bubble_speed.append(random.randint(1,MAX_BUBBLE_SPEED))
 
 # easy way to keep the window open
 input()
