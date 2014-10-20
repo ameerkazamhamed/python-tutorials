@@ -34,5 +34,4 @@ main = ttk.Frame(root).pack()
 root.wm_title('Hello GUI World')
 button1 = ttk.Button(main, text="Don't Press Me", command=do_print).pack()
 button2 = ttk.Button(main, text="Had Enough?", command=do_exit).pack()
-
-input()
+root.mainloop()
