@@ -4,9 +4,23 @@ tkinter/tkk
 Bunch of snippets illustrating different components of the standard
 [tkinter](https://docs.python.org/3.4/library/tkinter.html) and the
 standard [tkk](https://docs.python.org/3.4/library/tkinter.ttk.html)
-extension, (which is bundled with tkinter since 2.6 or so.)
+extension.
 
 **Always use the `tkk` versions of components when they are available.**
+
+Despite the use of `from tkinter import *` and `from tkinter import ttk`
+in many texts these samples use the following, arguably more Pythonic
+approach, which is easier for most beginners to follow and debug:
+
+```python
+import tkinter as tk
+import tkinter.ttk as ttk
+
+root = tk.Tk()
+main = ttk.Frame(root)
+```
+This has the added advantage of automatically getting around the fact
+that the root Tk component cannot itself be styled, only subcomponents.
 
 Also see the [revised Bubble Blaster
 project](https://github.com/skilstak/dk-help-your-kids-with-computer-coding/blob/master/bubble-blaster/revised-oop.py)
