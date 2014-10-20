@@ -50,7 +50,7 @@ The standard Python `tkinter` 3.4 documentation.
 
 The standard Python `ttk` 3.4 documentation.
 
-## Dated
+## Outdated but Useful
 
 These continue to show up in searches and while they have a lot of useful
 information &mdash; especially for pre-`ttk` (8.5) components such as
