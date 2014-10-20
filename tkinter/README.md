@@ -35,6 +35,21 @@ Documentation Resources
 Unless otherwise noted following materials are freely available online,
 in PDF or otherwise:
 
+#### [DK Help Your Kids with Computer Coding](https://github.com/skilstak/dk-help-your-kids-with-computer-coding)
+
+Link is to SkilStak's GitHub site documenting and extending it.
+
+This inexpensive book is one of SkilStak's standard recommendations
+for its approachability and great style despite some of its errors and
+less-than-desirable technology choices and descriptions.
+
+Only `tkinter.colorpicker` and `tkinter.Canvas` are used, but this is
+fine since these are the most fun for beginners.
+
+Be warned that the Bubble Blaster project in
+particular needs reworking, which we have
+[revised](https://github.com/skilstak/dk-help-your-kids-with-computer-coding/bubble-blaster).
+
 #### [Modern Tkinter for Busy Python Developers](http://www.amazon.com/Modern-Tkinter-Busy-Python-Developers-ebook/dp/B0071QDNLO)
 
 Heavily focuses on the main widgets and not as much on `tkinter.Canvas`
