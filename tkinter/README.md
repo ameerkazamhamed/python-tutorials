@@ -44,11 +44,11 @@ or so.
 
 #### [Python interface to Tcl/Tk](https://docs.python.org/3.4/library/tkinter.html)
 
-This is the standard Python 3.4 documentation.
+The standard Python `tkinter` 3.4 documentation.
 
 #### [Tk themed widgets](https://docs.python.org/3.4/library/tkinter.ttk.html)
 
-This is the standard Python 3.4 documentation.
+The standard Python `ttk` 3.4 documentation.
 
 #### [An Introduction to Tkinter](http://effbot.org/tkinterbook/)
 
@@ -63,3 +63,7 @@ ttk import *` references, but the discussion of the different components and
 parameters to them seems good.
 
 #### [Python GUI Programming](http://www.tutorialspoint.com/python/python_gui_programming.htm)
+
+Definitely dated information (using the old `Tkinter` reference instead of
+`tkinter`) but useful &mdash; especially for pre-`ttk` components.
+
