@@ -8,9 +8,11 @@ extension.
 
 **Always use the `tkk` versions of components when they are available.**
 
-Despite the use of `from tkinter import *` and `from tkinter import ttk`
-in many texts these samples use the following, arguably more Pythonic
-approach, which is easier for most beginners to follow and debug:
+Despite the use of `from tkinter import *` and `from tkinter
+import ttk` in many other documentation sources many of which claim
+this as 'standard' these samples follow an arguably [more Pythonic
+approach](https://docs.python.org/3.4/howto/doanddont.html), which is
+easier for most beginners to follow and debug:
 
 ```python
 import tkinter as tk
