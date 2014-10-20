@@ -42,6 +42,10 @@ but points out the importance of using `ttk` (modern `tkinter`) and
 how. Can be purchased for Kindle on Amazon and probably worth the $10
 or so.
 
+#### [Python interface to Tcl/Tk](https://docs.python.org/3.4/library/tkinter.html)
+
+This is the standard Python 3.4 documentation.
+
 #### [An Introduction to Tkinter](http://effbot.org/tkinterbook/)
 
 Still labeled a 'Work in Progress' after the last update was on November
