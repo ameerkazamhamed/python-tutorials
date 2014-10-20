@@ -54,7 +54,7 @@ The standard Python `ttk` 3.4 documentation.
 
 These continue to show up in searches and while they have a lot of useful
 information &mdash; especially for pre-`ttk` (8.5) components such as
-`tkinter.Canvas` &mdash; they are really out of date, sometimes as much
+`tkinter.Canvas` &mdash; they are really out of date, some by as much
 as 10 years.
 
 #### [An Introduction to Tkinter](http://effbot.org/tkinterbook/)
