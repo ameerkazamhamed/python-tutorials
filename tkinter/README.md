@@ -1,5 +1,5 @@
-tkinter/tkk Samples
-===================
+tkinter/tkk
+===========
 
 Bunch of snippets illustrating different components of the standard
 [tkinter](https://docs.python.org/3.4/library/tkinter.html) and the
