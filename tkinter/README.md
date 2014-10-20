@@ -37,5 +37,9 @@ in PDF or otherwise:
 
 #### [Tkinter 8.5 reference: a GUI for Python](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html)
 
+Pretty dated information, including the `from Tkinter import *` and `from
+ttk import *` references, but the discussion of the different components and
+parameters to them seems good.
+
 #### [Python GUI Programming](http://www.tutorialspoint.com/python/python_gui_programming.htm)
 
