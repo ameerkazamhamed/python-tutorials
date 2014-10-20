@@ -46,6 +46,10 @@ or so.
 
 This is the standard Python 3.4 documentation.
 
+#### [Tk themed widgets](https://docs.python.org/3.4/library/tkinter.ttk.html)
+
+This is the standard Python 3.4 documentation.
+
 #### [An Introduction to Tkinter](http://effbot.org/tkinterbook/)
 
 Still labeled a 'Work in Progress' after the last update was on November
