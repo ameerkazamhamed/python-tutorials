@@ -50,6 +50,13 @@ The standard Python `tkinter` 3.4 documentation.
 
 The standard Python `ttk` 3.4 documentation.
 
+## Dated
+
+These continue to show up in searches and while they have a lot of useful
+information &mdash; especially for pre-`ttk` (8.5) components such as
+`tkinter.Canvas` &mdash; they are really out of date, sometimes as much
+as 10 years.
+
 #### [An Introduction to Tkinter](http://effbot.org/tkinterbook/)
 
 Still labeled a 'Work in Progress' after the last update was on November
