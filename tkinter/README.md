@@ -35,6 +35,19 @@ Documentation Resources
 Unless otherwise noted following materials are freely available online,
 in PDF or otherwise:
 
+#### [Modern Tkinter for Busy Python Developers](http://www.amazon.com/Modern-Tkinter-Busy-Python-Developers-ebook/dp/B0071QDNLO)
+
+Heavily focuses on the main widgets and not as much on `tkinter.Canvas`
+but points out the importance of using `ttk` (modern `tkinter`) and
+how. Can be purchased for Kindle on Amazon and probably worth the $10
+or so.
+
+#### [An Introduction to Tkinter](http://effbot.org/tkinterbook/)
+
+Still labeled a 'Work in Progress' after the last update was on November
+2005, but still has helpful stuff &mdash; especially for `tkinter.Canvas`
+and the other components not affected by the 8.5 `ttk` update.
+
 #### [Tkinter 8.5 reference: a GUI for Python](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html)
 
 Pretty dated information, including the `from Tkinter import *` and `from
@@ -42,4 +55,3 @@ ttk import *` references, but the discussion of the different components and
 parameters to them seems good.
 
 #### [Python GUI Programming](http://www.tutorialspoint.com/python/python_gui_programming.htm)
-
