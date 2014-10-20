@@ -48,7 +48,7 @@ fine since these are the most fun for beginners.
 
 Be warned that the Bubble Blaster project in
 particular needs reworking, which we have
-[revised](https://github.com/skilstak/dk-help-your-kids-with-computer-coding/bubble-blaster).
+[revised](https://github.com/skilstak/dk-help-your-kids-with-computer-coding/tree/master/bubble-blaster).
 
 #### [Modern Tkinter for Busy Python Developers](http://www.amazon.com/Modern-Tkinter-Busy-Python-Developers-ebook/dp/B0071QDNLO)
 
