@@ -16,8 +16,8 @@ class Screen(ttk.Frame):
         self.imgnum = 4
         self.imglast = 0
         self.images = [self.subimage(32*i, 0, 32*(i+1), 48) for i in range(self.imgnum)]
-        self.canvas = tk.Canvas(self, width=32, height=48)
-        self.canvas.pack()
+        self.room = tk.Canvas(self, width=32, height=48)
+        self.room.pack()
         self.draw(0)
 
     def subimage(self, l, t, r, b):
@@ -26,8 +26,8 @@ class Screen(ttk.Frame):
         return image
 
     def draw(self, sprite):
-        self.canvas.delete(self.imglast)
-        self.imglast = self.canvas.create_image(16, 24, image=self.images[sprite])
+        self.room.delete(self.imglast)
+        self.imglast = self.room.create_image(16, 24, image=self.images[sprite])
         self.after(100, self.draw, (sprite+1) % self.imgnum)
 
 if __name__ == '__main__':
