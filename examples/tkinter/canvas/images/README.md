@@ -2,14 +2,10 @@ Images
 ======
 
 The only image format supported by by `tkinter` worth mentioning is
-GIF. You can either load them from files or embed them in your programs by
-encoding them in binhex and then setting variables with the binhex data.
-Which method you use depends on when you want to incur the load time,
-which almost never would be detectable for small images for games and
-such. Putting them all into binhex will load the fastest because it
-is only one file that has to be opened instead of several, but if you
-put all your images into a sprite sheet, which you probably should do,
-then you are only opening a single file anyway.
+GIF. You can either load them from files or embed them in your programs
+by encoding them in binhex and then setting variables with the binhex
+data, but don't do that. Just create separate files or a single sprite
+sheet depending on how many you have.
 
 Both methods are show here.
 
