@@ -140,7 +140,6 @@ class Controller():
                 direction =  random.choice(['x','-x','y','-y'])
 
 
-
     def print_player_grids(self,player):
 
         # define box characters
