@@ -1,17 +1,6 @@
 import json
 
-class Another():
-    def __init__(self):
-        self.some = 'thing'
-
-class MyClass():
-    spam = True
-    eggs = True
-
-    def __init__(self):
-        self.foo = 'bar'
-        self.other = None
-        #self.another = Another()  # but this breaks it
+class JSONMixin():
 
     def __str__(self):
         return json.dumps(self.__dict__)
@@ -23,10 +12,23 @@ class MyClass():
         instance.update(json_)
         return instance
 
-    def update(self,json_):
+    def update_from_json(self,json_):
         for key in json_: 
             if key in self.__dict__:
                 self.__dict__[key] = json_[key] 
+
+    update = update_from_json
+
+
+# mixins look like inheritance in Python
+
+class MyClass(JSONMixin):
+    spam = True
+    eggs = True
+
+    def __init__(self):
+        self.foo = 'bar'
+        self.other = None
 
 if __name__ == '__main__':
     mine = MyClass()
