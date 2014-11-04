@@ -23,10 +23,14 @@ The general approach is to learn fundamentals in the following order:
 1. Files
 1. JSON
 
-Then there are the fundamental types of programs:
+Then there are the types of programs:
 
 1. Single Command
 1. Interactive-REPL
-1. GUI-tkinter
-1. GUI-Kivy
-1. GUI-SDL2
+1. GUI-2D-turtle
+1. GUI-2D-tkinter
+1. GUI-2D-kivy
+1. GUI-2D-pygame
+1. GUI-2D-splat
+1. GUI-3D-panda3d
+1. GUI-3D-sdl2
