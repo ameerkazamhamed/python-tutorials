@@ -26,7 +26,7 @@ The general approach is to learn fundamentals in the following order:
 Then there are the types of programs:
 
 1. Single Command
-1. [Interactive-REPL](interactive-repl/)
+1. [Interactive-REPL](interactive-repl)
 1. GUI-2D-turtle
 1. GUI-2D-tkinter
 1. GUI-2D-kivy
