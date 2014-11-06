@@ -7,7 +7,7 @@ The general approach is to learn fundamentals in the following order:
 1. [Variables](variables) 
 1. [Strings](strings)
 1. [Numbers](numbers)
-1. [Math](math)
+1. [Operators (Basic Math and More)](operators)
 1. [Conditionals](conditionals)
 1. [Lists-Tuples](lists-tuples)
 1. [Dictionaries](dictionaries)

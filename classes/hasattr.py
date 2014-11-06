@@ -10,6 +10,8 @@ if __name__ == '__main__':
     instance = MyClass()
     print(instance)
     print(instance.__dict__)
+    print(MyClass.__dict__)
+    print(instance.__class__.__dict__)
     print('has myclass_attr',hasattr(MyClass,'my_class_attr'))
     print('has myclass_attr',MyClass.my_class_attr)
     print('has myclass_attr',hasattr(instance,'my_class_attr'))
