@@ -213,13 +213,26 @@ def contains(line, point):
         return x_in and y_in
     return False
 
-def xy_plus_vec(x=0, y=0, direction=0, amount=0):
-    '''Returns a new (x,y) coordinate after adding the amount in
-    the given direction
-    '''
-    newx = math.sin(math.radians(direction)) * amount + x
-    newy = math.cos(math.radians(direction)) * amount + y
-    return (newx,newy)
+def bearing(line):
+    angle = math.degrees(math.atan2(line[3]-line[1],line[2]-line[0]))
+    if 0 <= angle <= 90:
+        return 90 - angle
+    elif 90 < angle <= 180:
+        return 180 - angle + 270 
+    elif 0 > angle >= -90:
+        return 90 - angle
+    elif -90 > angle >= -180:
+        return 90 - angle
+
+def length(line):
+    """Thank you Pythagoras. You would have loved Python."""
+    return math.sqrt((line[2] - line[0]) ** 2 + (line[3] - line[1]) ** 2)
+
+def xy(x=0, y=0, direction=0.0, amount=0):
+    """Returns a new (x,y) coordinate after adding the amount in
+    the given direction."""
+    angle = math.radians(float(direction))
+    return (math.sin(angle) * amount + x, math.cos(angle) * amount + y)
 
 def to_tuples(lines):
     converted = []
