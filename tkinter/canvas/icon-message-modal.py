@@ -1,9 +1,9 @@
 import tkinter as tk
 import tkinter.ttk as ttk
 
-class RoundRect():
+#class RoundRect():
 
-    def __init__(self,w,x,y,dx,dy,r,f,o):
+#    def __init__(self,w,x,y,dx,dy,r,f,o):
 
 
 def round_rect(w,x,y,dx,dy,radius,color='white',tag='round_rect'):

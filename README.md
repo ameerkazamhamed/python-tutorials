@@ -8,10 +8,10 @@ The general approach is to learn fundamentals in the following order:
 1. [Strings](strings)
 1. [Numbers](numbers)
 1. [Operators (Basic Math and More)](operators)
-1. [Conditionals](conditionals)
+1. [Logic (Conditionals)](conditionals)
+1. [Loops](loops)
 1. [Lists-Tuples](lists-tuples)
 1. [Dictionaries](dictionaries)
-1. [Loops](loops)
 1. [Procedures (Function Definitions - No Return Value)](procedures)
 1. [Functions (Function Definitions - Return Value)](functions)
 1. [Classes](classes)
@@ -19,8 +19,8 @@ The general approach is to learn fundamentals in the following order:
 1. [Modules](modules)
 1. [Importing](importing)
 1. [Exceptions](exceptions)
-1. [Packages](packages)
 1. [Files](files)
+1. [Packages](packages)
 1. [JSON-YAML](json)
 
 Then there are the types of programs:
@@ -31,7 +31,7 @@ Then there are the types of programs:
 1. [GUI-2D-tkinter](tkinter)
 1. [GUI-2D-kivy](kivy)
 1. [GUI-2D-pygame](pygame)
-1. [GUI-2D-splat](spat)
+1. [GUI-2D-splat](splat)
 1. [GUI-3D-panda3d](panda3d)
 1. [GUI-3D-sdl2](sdl2)
 
