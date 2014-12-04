@@ -22,6 +22,7 @@ The general approach is to learn fundamentals in the following order:
 1. [Files](files)
 1. [Packages](packages)
 1. [JSON-YAML](json)
+1. [Testing](testing)
 
 Beyond the basics:
 
