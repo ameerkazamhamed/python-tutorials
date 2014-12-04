@@ -30,6 +30,7 @@ Beyond the basics:
 1. [Decorators](decorators)
 1. [Special Methods](special)
 1. [Packages and Distribution](packages)
+1. [Asynchronous Programming](async)
 1. [Extending](extending)
 1. [Embedding](embedding)
 
@@ -39,6 +40,7 @@ Then there are the types of programs:
 1. [Interactive-REPL](interactive-repl)
 1. [GUI-2D-turtle](turtle)
 1. [GUI-2D-tkinter](tkinter)
+1. [GUI-2D-GTK3](gtk3)
 1. [GUI-2D-kivy](kivy)
 1. [GUI-2D-pygame](pygame)
 1. [GUI-2D-splat](splat)
@@ -47,11 +49,6 @@ Then there are the types of programs:
 
 FAQ
 ===
-
-**Why no event programming, asyncio, and callbacks?**
-
-We save those topics when learning JavaScript even though Python
-clearly has them as well.
 
 **Why no Flash or Pyramid or Django or anything web related?**
 
