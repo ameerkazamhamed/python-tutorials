@@ -20,7 +20,6 @@ The general approach is to learn fundamentals in the following order:
 1. [Importing](importing)
 1. [Exceptions](exceptions)
 1. [Files](files)
-1. [Packages](packages)
 1. [JSON-YAML](json)
 1. [Testing](testing)
 
@@ -28,6 +27,11 @@ Beyond the basics:
 
 1. [Anonymous Functions (Lambdas)](lambdas)
 1. [List Mapping and Comprehensions](comprehensions)
+1. [Decorators](decorators)
+1. [Special Methods](special)
+1. [Packages and Distribution](packages)
+1. [Extending](extending)
+1. [Embedding](embedding)
 
 Then there are the types of programs:
 
