@@ -7,8 +7,8 @@ The general approach is to learn fundamentals in the following order:
 1. [Variables](variables) 
 1. [Strings](strings)
 1. [Numbers](numbers)
-1. [Operators (Basic Math and More)](operators)
-1. [Logic (Conditionals)](conditionals)
+1. [Operators (Assignment, Basic Math)](operators)
+1. [Logic (Booleans and Conditionals)](conditionals)
 1. [Loops](loops)
 1. [Lists-Tuples](lists-tuples)
 1. [Dictionaries](dictionaries)
@@ -22,6 +22,11 @@ The general approach is to learn fundamentals in the following order:
 1. [Files](files)
 1. [Packages](packages)
 1. [JSON-YAML](json)
+
+Beyond the basics:
+
+1. [Anonymous Functions (Lambdas)](lambdas)
+1. [List Mapping and Comprehensions](comprehensions)
 
 Then there are the types of programs:
 
@@ -37,6 +42,11 @@ Then there are the types of programs:
 
 FAQ
 ===
+
+**Why no event programming, asyncio, and callbacks?**
+
+We save those topics when learning JavaScript even though Python
+clearly has them as well.
 
 **Why no Flash or Pyramid or Django or anything web related?**
 
