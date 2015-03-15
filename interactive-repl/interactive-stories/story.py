@@ -1,15 +1,21 @@
-"""A simple interactive story engine."""
+# -*- coding: utf-8 -*-
+"""Simple interactive story engine.
+
+This module contains some minimal classes and structure to create
+interactive stories (sometimes called interactive fiction) written
+entirely in Python. Authors can create stories as simple or as complex
+as they like since it is all just Python even including minigames within
+a given ``part`` of the story.
+
+"""
 
 import importlib
 
 class Story:
-    
-    def __init__(self):
-        """All stories must have an intro module"""
-        pass
 
     @property
     def part(self):
+        """Reference to the imported module containing part of story."""
         return self._part
 
     @part.setter

@@ -1,3 +1,12 @@
+***This is being reorganized based on our new course catalog offerings,
+which are broken down into the following:
+
+* Python-0
+* Python-1
+* Python-2
+* Python-3
+
+
 A place to organize live and prepared class materials. Stop in often to
 find new stuff.
 
