@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+'''
+Here as a bunch of text that I think should not
+be properly spaced but I want it to be joined and wrapped to whatever so it looks good
+anyway.
+
+And this line should be a new paragraph
+of it's own.
+'''
+
+from textwrap import wrap,fill
+
+for line in wrap(__doc__):
+    print(line)
